@@ -1,7 +1,6 @@
-import type { LocalizedText } from "./LocalizedText";
-
 export default {
-  hello: "こんにちは",
-  world: "世界",
-  helloName: ({ name }) => `こんにちは、${name}さん`,
-} satisfies LocalizedText;
+  こんにちは: "こんにちは",
+  "こんにちは%s": "こんにには%s",
+  "今日の気温は%d度です": "今日の気温は%d度です",
+  "ラッキーナンバーは%r": "ラッキーナンバーは%r",
+};
