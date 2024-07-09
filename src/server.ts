@@ -12,8 +12,8 @@ async function server() {
   app.use(express.static("dist"));
 
   app.get("/", (req, res) => {
-    const query = req.query as { locale: Locale };
-    const locale = query.locale || "ja";
+    const query = req.query as { lang: Locale };
+    const locale = query.lang || "ja";
     const state = { language: locale };
     const str = JSON.stringify(state);
 
